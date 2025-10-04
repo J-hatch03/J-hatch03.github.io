@@ -78,9 +78,11 @@ footer {
 }
 
 img {
-  padding-left: 10px;
-  padding-right: 10px;
+border-style: none;
+max-width: 100%;
+height: auto;
 }
+
 
 #homehero {
   height: 300px;
