@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #fcebb6;
   background-image: url(images/fadedroad50.jpg);
@@ -10,32 +15,52 @@ body {
 }
 
 #wrapper {
-  background-color: #fefaeb;
+  background-color: #231814;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
   min-width: 900px;
   max-width: 1280px;
   box-shadow: 3px 3px 3px #676767;
+  padding: 0;
 }
 
 header {
-  color: #8c3826;
   background-color: #d2b48c;
-  text-align: center;
+  background-image: url(images/coffeelogo.jpg);
+  background-repeat: no-repeat;
+  color: #231814;
+  padding-left: 240px;
   padding-top: 5px;
   padding-bottom: 5px;
+  font-family: "Sour Gummy", sans-serif;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a:link {
+  color: #231814;
+}
+
+header a:visited {
+  color: #231814;
+}
+
+header a:hover {
+  color: #FeF6C2;
 }
 
 h1 {
   font-size: 3em;
 }
+
 h2 {
   color: #8c3826;
 }
 
-h3,
-dt {
+h3, dt {
   color: #8c3826;
 }
 
@@ -43,38 +68,70 @@ h4 {
   background-color: #d2b48c;
   font-size: 1.2em;
   padding-left: 0.5em;
-  padding-bottom: 0.25em;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid #221811;
+  clear: left;
 }
+
 nav {
+  float: left;
   font-weight: bold;
   text-align: center;
   font-size: 1.5em;
   padding-top: 5px;
   padding-bottom: 5px;
+  width: 200px;
 }
 
 nav a {
   text-decoration: none;
 }
 
-main {
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-bottom: 2em;
-  display: block;
+nav a:link { 
+  color: #FEF6C2;
 }
-footer {
-  background-color: #d2b48c;
-  font-size: 0.6em;
-  font-style: italic;
-  text-align: center;
-  padding-bottom: 1em;
-  border-top: 2px #8c3826;
+
+nav a:visited { 
+  color: #d2b48c;
+}
+
+nav a:hover { 
+  color: #cc9933;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+main {
+  padding: 0 0 2em 0;
+  display: block;
+  margin-left: 200px;
+  background-color: #fef6c2;
+  overflow: auto;
+}
+
+main h2, h3, h4, p, div, ul, dl {
+  padding-left: 3em;
+  padding-right: 2em;
 }
 
 .details {
   padding-left: 20%;
   padding-right: 20%;
+  overflow: auto;
+}
+
+.floatleft {
+  float: left;
+  padding-right: 2em;
+  padding-bottom: 2em;
+}
+
+.onethird {
+  float: left;
+  width: 33%;
 }
 
 img {
@@ -87,18 +144,34 @@ height: auto;
 #homehero {
   height: 300px;
   background-image: url(images/hero.jpg);
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
-#wrapper {
-  width: 80%;
-  background-color: #fefaeb;
-  margin-right: auto;
-  margin-left: auto;
+#heromugs {
+  height: 300px;
+  background-image: url(images/heromugs.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#heroguitar {
+  height: 300px;
+  background-image: url(images/heroguitar.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 dl,
 ul {
   font-family: "Sour Gummy", sans-serif;
+}
+
+footer {
+  background-color: #d2b48c;
+  font-size: .60em;
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 1em;
+  border-top: 2px solid #8c3826;
 }
